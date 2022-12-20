@@ -24,12 +24,12 @@ import pipes
 # MySQL database details to which backup to be done. Make sure below user having enough privileges to take databases backup.
 # To take multiple databases backup, create any file like /backup/dbnames.txt and put databases names one on each line and assigned to DB_NAME variable.
 
-DB_HOST = 'localhost' 
-DB_USER = 'root'
-DB_USER_PASSWORD = '_mysql_user_password_'
+DB_HOST = 'ems-prod-db.czwba4w5pjbo.us-west-2.rds.amazonaws.com' 
+DB_USER = 'admin'
+DB_USER_PASSWORD = 'e9l4bs430'
 #DB_NAME = '/backup/dbnameslist.txt'
-DB_NAME = 'db_name_to_backup'
-BACKUP_PATH = '/backup/dbbackup'
+DB_NAME = 'woflow'
+BACKUP_PATH = '/home/ec2-user/environment/mysql_backup'
 
 # Getting current DateTime to create the separate backup folder like "20180817-123433".
 DATETIME = time.strftime('%Y%m%d-%H%M%S')
